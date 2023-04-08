@@ -1,8 +1,90 @@
-.player-music{
+.player-music {
     background-color: rgba(32, 31, 31, 0.9) !important;
     height: 6rem;
 }
 
-.rhap_time, .rhap_current-time{
-    color:#fff !important;
+.rhap_time,
+.rhap_current-time {
+    color: #fff !important;
+}
+.hp-full {
+    display: inline-block; /* Hiển thị như khối inline */
+  max-width: 100%; /* Độ rộng tối đa của văn bản */
+  text-overflow: ellipsis; /* Hiển thị 3 chấm */
+  overflow: hidden; /* Ẩn phần vượt quá */
+  white-space: nowrap;
+}
+
+.m-w-o{
+    max-width: 230px;
+}
+
+.flex-grow {
+    
+}
+
+.text-xl{
+    color: #fff;
+}
+
+.m-w-o{
+    max-width: 360px;
+}
+@media (max-width: 980px) {
+    .m-w-o{
+        max-width: 200px;
+    }
+}
+@media (min-width: 500px) {
+    .item-none {
+        display: flex;
+    }
+}
+@media (max-width: 500px) {
+    .m-w-o{
+        max-width: 100px;
+    }
+
+    .w-\[240px\] {
+        width: 120px;
+    }
+
+    .justify-evenly {
+        justify-content: center;
+    }
+
+    .w-\[70px\] {
+        width: 30px;
+    }
+
+    .text-xl {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        margin-left: 6px;
+    }
+
+    .overflow-y-scroll{
+        overflow-x: hidden;
+    }
+    .center-text{
+        display: flex;
+        justify-content: center;
+    }
+
+    .res-text{
+        max-width: 150px;
+    }
+    .grid-cols-3 {
+        grid-template-columns: 1fr; /* Thiết lập cột duy nhất cho độ rộng màn hình < 500px */
+    }
+
+    .item-none img {
+        display: none;
+    }
+    .text-left {
+        padding-left: 10px;
+    }
+    .item-none span {
+        margin-left: 10px;
+    }
 }

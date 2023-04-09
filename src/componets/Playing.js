@@ -14,9 +14,7 @@ export default function Playing() {
       handleSetSong(song.id>0?song.id-1:DataSongs.length-1)
     }
 
-    // useEffect(()=>{
-    //   handleSetIsplayAudio()
-    // },[isplayAudio])
+   
   return (
     <div>
       <AudioPlayer

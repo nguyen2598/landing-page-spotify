@@ -11,9 +11,9 @@ export default function ListSong() {
     useEffect(() => {
         setIdSong(song.id);
     }, [song]);
-    console.log(DataSongs);
+    // console.log(DataSongs);
     return (
-        <div className="col-span-2 overflow-y-scroll">
+        <div className="col-span-2 overflow-y-scroll scrollbar ">
             <table className="table-auto w-full">
                 <thead className="text-white h-12">
                     <tr>

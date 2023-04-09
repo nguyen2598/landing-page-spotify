@@ -14,10 +14,14 @@ const handleSetSong=(idSong)=>{
   const song =DataSongs.find(song=>song.id===idSong)
   setSong(song)
 }
+const handleSetIsplayAudio=(prev)=>{
+  setIsplayAudio(prev)
+}
+const [isplayAudio,setIsplayAudio]=useState(false)
 
   return (
     <div className="App">
-     <Songs.Provider value={{DataSongs,song,handleSetSong}}>
+     <Songs.Provider value={{DataSongs,song,handleSetSong,handleSetIsplayAudio,isplayAudio}}>
       <Navbar/>
       <div className='grid grid-cols-3 bg-slate-700 h-screen-navbar-palyer'>
         <DetailSong/>
